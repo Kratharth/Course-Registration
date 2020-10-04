@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="JS/main.js"></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome Student</h1>
+    <p>Please fill in this form to complete the course registration.</p>
+    <hr>
+    
+    <label for= "sem"><b>Choose your Semester : </b></label>
+    <select id="sem" name="sem">
+        <option value="3">a</option>
+        <option value="5">b</option>
+        <option value="7">c</option>
+      </select>
+    <hr>
+
+    <h3>Course 1:</h3>
+    <label for="cc1"><b>Course Code:</b></label>
+    <input type="text" placeholder="Enter Course Code" name="cc1" id="cc1" required>
+
+    <label for="cn1"><b>Course Name:</b></label>
+    <input type="text" placeholder="Enter Course Name" name="cn1" id="cn1" required>
+
+    <label for="c1"><b>Credits:</b></label>
+    <input type="text" placeholder="Enter Course Credits" name="c1" id="c1" required>
+
+    <label for= "type1"><b>Choose your Registration Type: </b></label>
+    <select id="type1" name="type1">
+        <option value="Registered">Registered</option>
+        <option value="Re- Registered">Re-Registered</option>
+      </select>
+    <hr>
+
+    <h3>Course 2:</h3>
+    <label for="cc2"><b>Course Code:</b></label>
+    <input type="text" placeholder="Enter Course Code" name="cc2" id="cc2" required>
+
+    <label for="cn2"><b>Course Name:</b></label>
+    <input type="text" placeholder="Enter Course Name" name="cn2" id="cn2" required>
+
+    <label for="c2"><b>Credits:</b></label>
+    <input type="text" placeholder="Enter Course Credits" name="c2" id="c2" required>
+
+    <label for= "type2"><b>Choose your Registration Type: </b></label>
+    <select id="type2" name="type1">
+        <option value="Registered">Registered</option>
+        <option value="Re- Registered">Re-Registered</option>
+      </select>
+    <hr>
+
+    <h3>Course 3:</h3>
+    <label for="cc3"><b>Course Code:</b></label>
+    <input type="text" placeholder="Enter Course Code" name="cc3" id="cc3" required>
+
+    <label for="cn3"><b>Course Name:</b></label>
+    <input type="text" placeholder="Enter Course Name" name="cn3" id="cn3" required>
+
+    <label for="c3"><b>Credits:</b></label>
+    <input type="text" placeholder="Enter Course Credits" name="c3" id="c3" required>
+
+    <label for= "type3"><b>Choose your Registration Type:</b></label>
+    <select id="type3" name="type3">
+        <option value="Registered">Registered</option>
+        <option value="Re- Registered">Re-Registered</option>
+      </select>
+    <hr>
+    
+    <button type="submit" class="registerbtn" onclick="Javascript:checkStudent()">Register</button>
+  </div>
+
+
+</body>
+</html>
